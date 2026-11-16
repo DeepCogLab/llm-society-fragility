@@ -1,0 +1,222 @@
+rows {'rows': 1150848, 'rows_by_source': {'v3': 186624, 'v4': 590976, 'v5': 373248}, 'rows_by_model': {'GLM-4-9B': 196992, 'Llama-3.1-8B': 196992, 'Qwen2.5-7B': 248832, 'Qwen3-14B': 259200, 'Qwen3-30B': 248832}, 'blocks_shared_abs_nl': True}
+
+== tail effect (pp) [95% CI] | peak at t=3 | retention | control tail error | collapse treated/control (all agents)
+Qwen2.5-7B|abs|initial_only|treated                       15.6 [  9.4, 22.5]  peak  14.5  ret  1.08  ctrl  13.9  collapse   23%/ 10% (nonseed   25%/ 12%)
+Qwen2.5-7B|abs|initial_only|no_relay_treated               0.1 [ -0.1,  0.3]  peak   8.9  ret  0.01  ctrl  13.9  collapse   10%/ 10% (nonseed   12%/ 12%)
+Qwen2.5-7B|abs|persistent|treated                          0.9 [ -1.1,  2.9]  peak   7.7  ret  0.12  ctrl  19.9  collapse    4%/  2% (nonseed    4%/  4%)
+Qwen2.5-7B|abs|persistent|no_relay_treated                 0.1 [ -0.2,  0.5]  peak   5.2  ret  0.03  ctrl  19.9  collapse    2%/  2% (nonseed    4%/  4%)
+Qwen2.5-7B|abs|anchor25|treated                           12.4 [  8.5, 16.3]  peak  14.2  ret  0.87  ctrl  14.3  collapse   15%/  4% (nonseed   15%/  4%)
+Qwen2.5-7B|abs|anchor50|treated                            7.0 [  2.9, 11.1]  peak  11.2  ret  0.63  ctrl  17.7  collapse   15%/  6% (nonseed   12%/  6%)
+Qwen2.5-7B|abs|in_history|treated                          9.6 [  4.0, 16.0]  peak  12.6  ret  0.76  ctrl   9.2  collapse   12%/  4% (nonseed   12%/  4%)
+Qwen2.5-7B|abs|init_fullmem|treated                       18.2 [ 11.3, 25.4]  peak  14.7  ret  1.24  ctrl  11.0  collapse   23%/ 10% (nonseed   29%/ 10%)
+Qwen2.5-7B|abs|init_seed1|treated                          2.4 [ -2.6,  7.4]  peak   3.6  ret  0.66  ctrl  13.9  collapse   10%/ 10% (nonseed   12%/ 10%)
+Qwen2.5-7B|abs|init_seed6|treated                         38.7 [ 30.9, 46.4]  peak  31.7  ret  1.22  ctrl  14.0  collapse   54%/ 10% (nonseed   52%/ 12%)
+Qwen2.5-7B|abs|persist_seed6|treated                       2.7 [  0.1,  4.7]  peak  18.3  ret  0.15  ctrl  20.2  collapse    2%/  2% (nonseed    2%/  4%)
+Qwen2.5-7B|nl|initial_only|treated                        59.1 [ 48.8, 69.3]  peak  46.4  ret  1.27  ctrl  28.7  collapse   92%/ 27% (nonseed   92%/ 27%)
+Qwen2.5-7B|nl|initial_only|treated_neutral                10.4 [  5.1, 15.8]  peak   6.3  ret  1.63  ctrl  28.7  collapse   40%/ 27% (nonseed   40%/ 27%)
+Qwen2.5-7B|nl|initial_only|no_relay_treated                0.0 [ -0.3,  0.3]  peak  27.7  ret  0.00  ctrl  28.7  collapse   27%/ 27% (nonseed   27%/ 27%)
+Qwen2.5-7B|nl|persistent|treated                           9.5 [  6.6, 12.6]  peak  33.2  ret  0.29  ctrl  23.2  collapse   12%/  4% (nonseed   15%/  6%)
+Qwen2.5-7B|nl|persistent|no_relay_treated                 -0.5 [ -0.9, -0.1]  peak  23.8  ret -0.02  ctrl  23.2  collapse    4%/  4% (nonseed    8%/  6%)
+Qwen3-14B|abs|initial_only|treated                         8.9 [  3.7, 15.4]  peak  10.3  ret  0.87  ctrl  11.0  collapse   19%/  4% (nonseed   17%/  4%)
+Qwen3-14B|abs|initial_only|no_relay_treated               -0.1 [ -0.4,  0.2]  peak   6.2  ret -0.01  ctrl  11.0  collapse    4%/  4% (nonseed    4%/  4%)
+Qwen3-14B|abs|persistent|treated                          -0.0 [ -0.2,  0.2]  peak   0.0  ret   n/a  ctrl  29.0  collapse    0%/  0% (nonseed    2%/  2%)
+Qwen3-14B|abs|persistent|no_relay_treated                  0.1 [  0.0,  0.2]  peak   0.0  ret   n/a  ctrl  29.0  collapse    0%/  0% (nonseed    2%/  2%)
+Qwen3-14B|abs|anchor25|treated                             4.2 [  1.5,  7.3]  peak   7.0  ret  0.60  ctrl  20.7  collapse   15%/  6% (nonseed   17%/  6%)
+Qwen3-14B|abs|anchor50|treated                             1.3 [ -1.1,  3.5]  peak   3.8  ret  0.35  ctrl  28.1  collapse   17%/ 15% (nonseed   19%/ 19%)
+Qwen3-14B|abs|in_history|treated                           3.6 [  2.0,  5.5]  peak   6.2  ret  0.59  ctrl  14.7  collapse    4%/  2% (nonseed    6%/  2%)
+Qwen3-14B|abs|init_fullmem|treated                         6.1 [  2.3, 10.4]  peak   8.3  ret  0.73  ctrl  14.1  collapse   17%/  8% (nonseed   15%/ 10%)
+Qwen3-14B|abs|init_seed1|treated                           8.2 [  3.2, 13.7]  peak   4.3  ret  1.93  ctrl  11.3  collapse   19%/  4% (nonseed   19%/  4%)
+Qwen3-14B|abs|init_seed6|treated                          31.6 [ 22.7, 41.2]  peak  25.2  ret  1.25  ctrl  10.6  collapse   50%/  4% (nonseed   48%/  4%)
+Qwen3-14B|abs|persist_seed6|treated                       -0.0 [ -0.2,  0.1]  peak   0.1  ret   n/a  ctrl  29.6  collapse    0%/  0% (nonseed    2%/  2%)
+Qwen3-14B|nl|initial_only|treated                         73.0 [ 66.7, 79.2]  peak  45.3  ret  1.61  ctrl  13.5  collapse   96%/  6% (nonseed   94%/  8%)
+Qwen3-14B|nl|initial_only|treated_authority               69.9 [ 64.0, 75.8]  peak  44.3  ret  1.58  ctrl  13.5  collapse   92%/  6% (nonseed   92%/  8%)
+Qwen3-14B|nl|initial_only|treated_neutral                  6.0 [  2.1, 10.3]  peak   4.7  ret  1.28  ctrl  13.5  collapse   17%/  6% (nonseed   17%/  8%)
+Qwen3-14B|nl|initial_only|no_relay_treated                -0.0 [ -0.3,  0.4]  peak  29.3  ret  0.00  ctrl  13.5  collapse    8%/  6% (nonseed    8%/  8%)
+Qwen3-14B|nl|persistent|treated                            1.5 [  0.3,  2.8]  peak  14.1  ret  0.11  ctrl  26.5  collapse    8%/  0% (nonseed    4%/  0%)
+Qwen3-14B|nl|persistent|no_relay_treated                  -0.1 [ -0.3,  0.1]  peak  10.5  ret -0.01  ctrl  26.5  collapse    0%/  0% (nonseed    0%/  0%)
+Qwen3-30B|abs|initial_only|treated                        12.1 [  7.5, 17.1]  peak  11.9  ret  1.01  ctrl   7.7  collapse   17%/  2% (nonseed   17%/  4%)
+Qwen3-30B|abs|initial_only|no_relay_treated               -0.0 [ -0.1,  0.0]  peak   7.2  ret -0.00  ctrl   7.7  collapse    2%/  2% (nonseed    4%/  4%)
+Qwen3-30B|abs|persistent|treated                          -0.3 [ -1.1,  0.5]  peak   2.3  ret -0.13  ctrl  26.1  collapse    4%/  2% (nonseed    4%/  2%)
+Qwen3-30B|abs|persistent|no_relay_treated                  0.1 [ -0.3,  0.5]  peak   2.3  ret  0.03  ctrl  26.1  collapse    2%/  2% (nonseed    2%/  2%)
+Qwen3-30B|abs|anchor25|treated                             6.0 [  2.1, 10.4]  peak  10.5  ret  0.57  ctrl  14.2  collapse   10%/  6% (nonseed   10%/  6%)
+Qwen3-30B|abs|anchor50|treated                             5.0 [  2.7,  7.2]  peak   9.1  ret  0.55  ctrl  20.9  collapse   15%/  8% (nonseed   15%/ 10%)
+Qwen3-30B|abs|in_history|treated                           6.3 [  3.2,  9.6]  peak   7.9  ret  0.79  ctrl   6.9  collapse    4%/  2% (nonseed    4%/  2%)
+Qwen3-30B|abs|init_fullmem|treated                         9.0 [  4.2, 14.7]  peak  10.4  ret  0.86  ctrl   7.7  collapse   15%/  2% (nonseed   15%/  4%)
+Qwen3-30B|abs|init_seed1|treated                           2.5 [ -1.7,  7.4]  peak   2.4  ret  1.01  ctrl   7.7  collapse    6%/  2% (nonseed    6%/  2%)
+Qwen3-30B|abs|init_seed6|treated                          38.8 [ 28.4, 49.3]  peak  31.5  ret  1.23  ctrl   7.9  collapse   50%/  2% (nonseed   44%/  2%)
+Qwen3-30B|abs|persist_seed6|treated                       -0.3 [ -1.9,  1.2]  peak   5.8  ret -0.06  ctrl  26.9  collapse    2%/  2% (nonseed    2%/  2%)
+Qwen3-30B|nl|initial_only|treated                         76.6 [ 64.7, 87.2]  peak  55.5  ret  1.38  ctrl  15.5  collapse   96%/ 15% (nonseed   94%/ 15%)
+Qwen3-30B|nl|initial_only|treated_neutral                 13.5 [  8.1, 19.0]  peak  14.5  ret  0.93  ctrl  15.5  collapse   25%/ 15% (nonseed   23%/ 15%)
+Qwen3-30B|nl|initial_only|no_relay_treated                 0.1 [ -0.1,  0.2]  peak  33.2  ret  0.00  ctrl  15.5  collapse   15%/ 15% (nonseed   15%/ 15%)
+Qwen3-30B|nl|persistent|treated                           30.5 [ 25.1, 35.7]  peak  39.3  ret  0.78  ctrl  18.2  collapse   42%/  4% (nonseed   46%/  4%)
+Qwen3-30B|nl|persistent|no_relay_treated                   0.2 [ -0.4,  0.7]  peak  30.6  ret  0.01  ctrl  18.2  collapse    4%/  4% (nonseed    4%/  4%)
+GLM-4-9B|abs|initial_only|treated                         45.9 [ 38.0, 53.9]  peak  33.4  ret  1.37  ctrl  20.5  collapse   67%/ 19% (nonseed   67%/ 19%)
+GLM-4-9B|abs|initial_only|no_relay_treated                 0.3 [  0.1,  0.6]  peak  22.0  ret  0.01  ctrl  20.5  collapse   19%/ 19% (nonseed   19%/ 19%)
+GLM-4-9B|abs|persistent|treated                            2.2 [  0.2,  4.2]  peak  15.2  ret  0.15  ctrl  23.3  collapse    4%/  2% (nonseed    4%/  6%)
+GLM-4-9B|abs|persistent|no_relay_treated                   0.1 [ -0.2,  0.3]  peak  12.3  ret  0.01  ctrl  23.3  collapse    2%/  2% (nonseed    6%/  6%)
+GLM-4-9B|abs|in_history|treated                           14.2 [  9.0, 19.5]  peak  28.0  ret  0.51  ctrl  20.2  collapse   29%/ 10% (nonseed   27%/ 15%)
+GLM-4-9B|abs|init_fullmem|treated                         37.3 [ 29.9, 44.4]  peak  32.9  ret  1.13  ctrl  23.2  collapse   67%/ 19% (nonseed   60%/ 19%)
+GLM-4-9B|abs|init_seed6|treated                           74.5 [ 64.0, 84.3]  peak  58.2  ret  1.28  ctrl  20.6  collapse  100%/ 19% (nonseed  100%/ 19%)
+GLM-4-9B|abs|persist_seed6|treated                         4.6 [  2.1,  7.4]  peak  29.5  ret  0.16  ctrl  23.5  collapse    8%/  2% (nonseed    8%/  2%)
+GLM-4-9B|nl|initial_only|treated                          56.7 [ 47.5, 66.5]  peak  51.8  ret  1.10  ctrl  27.8  collapse   90%/ 27% (nonseed   88%/ 27%)
+GLM-4-9B|nl|initial_only|treated_neutral                  13.0 [  6.5, 19.9]  peak  14.5  ret  0.89  ctrl  27.8  collapse   48%/ 27% (nonseed   46%/ 27%)
+GLM-4-9B|nl|initial_only|no_relay_treated                  0.4 [ -0.2,  1.2]  peak  32.3  ret  0.01  ctrl  27.8  collapse   25%/ 27% (nonseed   27%/ 27%)
+GLM-4-9B|nl|persistent|treated                             5.7 [  2.5,  9.3]  peak  25.8  ret  0.22  ctrl  22.2  collapse   12%/  2% (nonseed   12%/  2%)
+GLM-4-9B|nl|persistent|no_relay_treated                    0.1 [ -0.2,  0.3]  peak  19.3  ret  0.00  ctrl  22.2  collapse    2%/  2% (nonseed    2%/  2%)
+Llama-3.1-8B|abs|initial_only|treated                      0.5 [  0.0,  1.0]  peak   8.1  ret  0.06  ctrl  49.5  collapse   50%/ 50% (nonseed   50%/ 50%)
+Llama-3.1-8B|abs|initial_only|no_relay_treated             0.1 [  0.0,  0.3]  peak   5.8  ret  0.02  ctrl  49.5  collapse   50%/ 50% (nonseed   50%/ 50%)
+Llama-3.1-8B|abs|persistent|treated                        0.6 [ -1.3,  2.5]  peak   1.3  ret  0.49  ctrl  29.6  collapse   23%/ 15% (nonseed   21%/ 21%)
+Llama-3.1-8B|abs|persistent|no_relay_treated              -0.1 [ -0.6,  0.4]  peak   2.2  ret -0.06  ctrl  29.6  collapse   12%/ 15% (nonseed   21%/ 21%)
+Llama-3.1-8B|abs|in_history|treated                        4.7 [  1.2,  8.9]  peak  10.5  ret  0.44  ctrl  40.1  collapse   48%/ 46% (nonseed   48%/ 44%)
+Llama-3.1-8B|abs|init_fullmem|treated                      2.3 [  0.9,  3.8]  peak  11.2  ret  0.21  ctrl  46.4  collapse   50%/ 50% (nonseed   50%/ 50%)
+Llama-3.1-8B|abs|init_seed6|treated                        1.0 [  0.3,  1.9]  peak  16.0  ret  0.06  ctrl  49.3  collapse   50%/ 50% (nonseed   50%/ 50%)
+Llama-3.1-8B|abs|persist_seed6|treated                     0.3 [ -1.4,  2.1]  peak   5.1  ret  0.07  ctrl  29.6  collapse   15%/ 15% (nonseed   19%/ 12%)
+Llama-3.1-8B|nl|initial_only|treated                      19.3 [ 14.8, 24.4]  peak  28.7  ret  0.67  ctrl  39.4  collapse   54%/ 46% (nonseed   56%/ 46%)
+Llama-3.1-8B|nl|initial_only|treated_neutral               4.1 [  1.0,  7.7]  peak   2.8  ret  1.49  ctrl  39.4  collapse   48%/ 46% (nonseed   48%/ 46%)
+Llama-3.1-8B|nl|initial_only|no_relay_treated              0.1 [ -0.5,  0.8]  peak  19.8  ret  0.00  ctrl  39.4  collapse   46%/ 46% (nonseed   46%/ 46%)
+Llama-3.1-8B|nl|persistent|treated                         0.2 [ -1.1,  1.5]  peak   3.8  ret  0.06  ctrl  32.2  collapse    6%/  2% (nonseed    4%/ 10%)
+Llama-3.1-8B|nl|persistent|no_relay_treated                0.3 [ -0.1,  0.8]  peak   2.2  ret  0.15  ctrl  32.2  collapse    4%/  2% (nonseed   10%/ 10%)
+
+== lock-in
+Qwen2.5-7B|initial_only {'extra_wrong_t8': 195, 'share_local_majority_or_tie_wrong': 0.9282051282051282, 'share_never_directly_exposed': 0.45641025641025645, 'share_mentions_audit': 0.0}
+Qwen2.5-7B|persistent {'extra_wrong_t8': 58, 'share_local_majority_or_tie_wrong': 0.3793103448275862, 'share_never_directly_exposed': 0.5344827586206897, 'share_mentions_audit': 0.0}
+Qwen3-14B|initial_only {'extra_wrong_t8': 107, 'share_local_majority_or_tie_wrong': 0.9719626168224299, 'share_never_directly_exposed': 0.44859813084112155, 'share_mentions_audit': 0.0}
+Qwen3-14B|persistent {'extra_wrong_t8': 0, 'share_local_majority_or_tie_wrong': None, 'share_never_directly_exposed': None, 'share_mentions_audit': None}
+Qwen3-30B|initial_only {'extra_wrong_t8': 123, 'share_local_majority_or_tie_wrong': 0.991869918699187, 'share_never_directly_exposed': 0.5040650406504066, 'share_mentions_audit': 0.0}
+Qwen3-30B|persistent {'extra_wrong_t8': 16, 'share_local_majority_or_tie_wrong': 0.125, 'share_never_directly_exposed': 0.5625, 'share_mentions_audit': 0.0}
+GLM-4-9B|initial_only {'extra_wrong_t8': 470, 'share_local_majority_or_tie_wrong': 0.9723404255319149, 'share_never_directly_exposed': 0.49787234042553197, 'share_mentions_audit': 0.031914893617021274}
+GLM-4-9B|persistent {'extra_wrong_t8': 81, 'share_local_majority_or_tie_wrong': 0.5432098765432098, 'share_never_directly_exposed': 0.5308641975308642, 'share_mentions_audit': 0.0}
+Llama-3.1-8B|initial_only {'extra_wrong_t8': 3, 'share_local_majority_or_tie_wrong': 0.6666666666666666, 'share_never_directly_exposed': 0.33333333333333337, 'share_mentions_audit': 0.0}
+Llama-3.1-8B|persistent {'extra_wrong_t8': 78, 'share_local_majority_or_tie_wrong': 0.5384615384615384, 'share_never_directly_exposed': 0.5, 'share_mentions_audit': 0.0}
+
+== rules
+GLM-4-9B|initial_only {'n': 8064, 'bayes_agreement': 0.966, 'follow_majority_of_4': 0.973, 'keep_previous_at_tie': 0.593, 'follow_majority_against_visible_evidence': None, 'control_error': 0.216} {0: 0.003, 1: 0.074, 2: 0.407, 3: 0.871, 4: 0.974}
+GLM-4-9B|persistent {'n': 8064, 'bayes_agreement': 0.876, 'follow_majority_of_4': 0.841, 'keep_previous_at_tie': 0.862, 'follow_majority_against_visible_evidence': 0.464, 'control_error': 0.239} {0: 0.032, 1: 0.102, 2: 0.138, 3: 0.33, 4: 0.674}
+Llama-3.1-8B|initial_only {'n': 8064, 'bayes_agreement': 0.943, 'follow_majority_of_4': 0.946, 'keep_previous_at_tie': 0.731, 'follow_majority_against_visible_evidence': None, 'control_error': 0.436} {0: 0.004, 1: 0.08, 2: 0.269, 3: 0.512, 4: 0.673}
+Llama-3.1-8B|persistent {'n': 8064, 'bayes_agreement': 0.807, 'follow_majority_of_4': 0.747, 'keep_previous_at_tie': 0.909, 'follow_majority_against_visible_evidence': 0.224, 'control_error': 0.296} {0: 0.03, 1: 0.051, 2: 0.091, 3: 0.137, 4: 0.198}
+Qwen2.5-7B|initial_only {'n': 8064, 'bayes_agreement': 0.975, 'follow_majority_of_4': 0.982, 'keep_previous_at_tie': 0.591, 'follow_majority_against_visible_evidence': None, 'control_error': 0.164} {0: 0.0, 1: 0.052, 2: 0.409, 3: 0.891, 4: 0.995}
+Qwen2.5-7B|persistent {'n': 8064, 'bayes_agreement': 0.89, 'follow_majority_of_4': 0.859, 'keep_previous_at_tie': 0.873, 'follow_majority_against_visible_evidence': 0.503, 'control_error': 0.208} {0: 0.035, 1: 0.074, 2: 0.127, 3: 0.344, 4: 0.647}
+Qwen3-14B|initial_only {'n': 8064, 'bayes_agreement': 0.975, 'follow_majority_of_4': 0.983, 'keep_previous_at_tie': 0.852, 'follow_majority_against_visible_evidence': None, 'control_error': 0.134} {0: 0.001, 1: 0.012, 2: 0.148, 3: 0.734, 4: 0.98}
+Qwen3-14B|persistent {'n': 8064, 'bayes_agreement': 0.774, 'follow_majority_of_4': 0.664, 'keep_previous_at_tie': 1.0, 'follow_majority_against_visible_evidence': 0.003, 'control_error': 0.29} {0: 0.001, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.002}
+Qwen3-30B|initial_only {'n': 8064, 'bayes_agreement': 0.984, 'follow_majority_of_4': 0.99, 'keep_previous_at_tie': 0.644, 'follow_majority_against_visible_evidence': None, 'control_error': 0.115} {0: 0.0, 1: 0.029, 2: 0.356, 3: 0.93, 4: 0.994}
+Qwen3-30B|persistent {'n': 8064, 'bayes_agreement': 0.811, 'follow_majority_of_4': 0.734, 'keep_previous_at_tie': 0.99, 'follow_majority_against_visible_evidence': 0.147, 'control_error': 0.267} {0: 0.024, 1: 0.019, 2: 0.01, 3: 0.043, 4: 0.186}
+
+== isolation
+Qwen2.5-7B {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.208, 4: 0.25}
+Qwen3-14B {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.021}
+Qwen3-30B {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.021, 4: 0.271}
+
+== premium
+Qwen2.5-7B|abs|initial_only|treated {'flip_injected': 0.359, 'flip_ordinary': 0.33, 'premium': 0.028, 'n_exposures': 552}
+Qwen3-14B|abs|initial_only|treated {'flip_injected': 0.143, 'flip_ordinary': 0.153, 'premium': -0.011, 'n_exposures': 631}
+Qwen3-30B|abs|initial_only|treated {'flip_injected': 0.217, 'flip_ordinary': 0.237, 'premium': -0.02, 'n_exposures': 589}
+GLM-4-9B|abs|initial_only|treated {'flip_injected': 0.777, 'flip_ordinary': 0.356, 'premium': 0.421, 'n_exposures': 408}
+Llama-3.1-8B|abs|initial_only|treated {'flip_injected': 0.335, 'flip_ordinary': 0.264, 'premium': 0.072, 'n_exposures': 492}
+Qwen2.5-7B|abs|persistent|treated {'flip_injected': 0.194, 'flip_ordinary': 0.139, 'premium': 0.055, 'n_exposures': 568}
+Qwen3-14B|abs|persistent|treated {'flip_injected': 0.003, 'flip_ordinary': 0.001, 'premium': 0.003, 'n_exposures': 581}
+Qwen3-30B|abs|persistent|treated {'flip_injected': 0.046, 'flip_ordinary': 0.017, 'premium': 0.029, 'n_exposures': 568}
+GLM-4-9B|abs|persistent|treated {'flip_injected': 0.365, 'flip_ordinary': 0.172, 'premium': 0.192, 'n_exposures': 524}
+Llama-3.1-8B|abs|persistent|treated {'flip_injected': 0.106, 'flip_ordinary': 0.097, 'premium': 0.009, 'n_exposures': 565}
+Qwen2.5-7B|nl|initial_only|treated {'flip_injected': 0.97, 'flip_ordinary': 0.497, 'premium': 0.474, 'n_exposures': 334}
+Qwen3-14B|nl|initial_only|treated {'flip_injected': 0.788, 'flip_ordinary': 0.342, 'premium': 0.446, 'n_exposures': 401}
+Qwen3-14B|nl|initial_only|treated_neutral {'flip_injected': 0.103, 'flip_ordinary': 0.214, 'premium': -0.111, 'n_exposures': 612}
+Qwen3-30B|nl|initial_only|treated {'flip_injected': 0.994, 'flip_ordinary': 0.49, 'premium': 0.504, 'n_exposures': 346}
+Qwen3-30B|nl|initial_only|treated_neutral {'flip_injected': 0.354, 'flip_ordinary': 0.319, 'premium': 0.035, 'n_exposures': 551}
+GLM-4-9B|nl|initial_only|treated {'flip_injected': 0.974, 'flip_ordinary': 0.482, 'premium': 0.492, 'n_exposures': 347}
+GLM-4-9B|nl|initial_only|treated_neutral {'flip_injected': 0.398, 'flip_ordinary': 0.429, 'premium': -0.031, 'n_exposures': 543}
+Llama-3.1-8B|nl|initial_only|treated {'flip_injected': 0.72, 'flip_ordinary': 0.407, 'premium': 0.313, 'n_exposures': 382}
+Llama-3.1-8B|nl|initial_only|treated_neutral {'flip_injected': 0.222, 'flip_ordinary': 0.4, 'premium': -0.178, 'n_exposures': 546}
+Qwen2.5-7B|nl|persistent|treated {'flip_injected': 0.844, 'flip_ordinary': 0.282, 'premium': 0.562, 'n_exposures': 371}
+Qwen3-14B|nl|persistent|treated {'flip_injected': 0.32, 'flip_ordinary': 0.07, 'premium': 0.25, 'n_exposures': 485}
+Qwen3-30B|nl|persistent|treated {'flip_injected': 0.92, 'flip_ordinary': 0.19, 'premium': 0.73, 'n_exposures': 337}
+GLM-4-9B|nl|persistent|treated {'flip_injected': 0.661, 'flip_ordinary': 0.202, 'premium': 0.459, 'n_exposures': 419}
+Llama-3.1-8B|nl|persistent|treated {'flip_injected': 0.229, 'flip_ordinary': 0.164, 'premium': 0.065, 'n_exposures': 506}
+
+== claim recited
+GLM-4-9B|initial_only|control 0.0 295
+GLM-4-9B|initial_only|no_relay_treated 0.007 297
+GLM-4-9B|initial_only|treated 0.384 846
+GLM-4-9B|initial_only|treated_neutral 0.0 419
+GLM-4-9B|persistent|control 0.0 215
+GLM-4-9B|persistent|no_relay_treated 0.0 216
+GLM-4-9B|persistent|treated 0.007 273
+Llama-3.1-8B|initial_only|control 0.019 432
+Llama-3.1-8B|initial_only|no_relay_treated 0.033 427
+Llama-3.1-8B|initial_only|treated 0.632 582
+Llama-3.1-8B|initial_only|treated_neutral 0.018 436
+Llama-3.1-8B|persistent|control 0.0 330
+Llama-3.1-8B|persistent|no_relay_treated 0.0 329
+Llama-3.1-8B|persistent|treated 0.0 322
+Qwen2.5-7B|initial_only|control 0.0 301
+Qwen2.5-7B|initial_only|no_relay_treated 0.0 299
+Qwen2.5-7B|initial_only|treated 0.068 885
+Qwen2.5-7B|initial_only|treated_neutral 0.025 406
+Qwen2.5-7B|persistent|control 0.004 240
+Qwen2.5-7B|persistent|no_relay_treated 0.0 234
+Qwen2.5-7B|persistent|treated 0.0 287
+Qwen3-14B|initial_only|control 0.0 132
+Qwen3-14B|initial_only|no_relay_treated 0.008 132
+Qwen3-14B|initial_only|treated 0.834 900
+Qwen3-14B|initial_only|treated_authority 0.899 870
+Qwen3-14B|initial_only|treated_neutral 0.005 193
+Qwen3-14B|persistent|control 0.0 266
+Qwen3-14B|persistent|no_relay_treated 0.0 265
+Qwen3-14B|persistent|treated 0.007 278
+Qwen3-30B|initial_only|control 0.0 161
+Qwen3-30B|initial_only|no_relay_treated 0.0 161
+Qwen3-30B|initial_only|treated 0.464 938
+Qwen3-30B|initial_only|treated_neutral 0.0 295
+Qwen3-30B|persistent|control 0.0 186
+Qwen3-30B|persistent|no_relay_treated 0.0 181
+Qwen3-30B|persistent|treated 0.025 448
+
+== bridge frozen {
+ "n": 21,
+ "r": 0.9725664787512933,
+ "mae": 1.9766664818101154,
+ "inside": 18,
+ "mean_signed_error": -1.3808498540317888,
+ "prospective_n": 15,
+ "prospective_inside": 12,
+ "prospective_r": 0.9704426142253433,
+ "prospective_mae": 2.5254349263860134,
+ "misses": [
+  "Qwen3-14B|init_seed1: pred 1.8 obs 8.2 [3.0,14.0]",
+  "Qwen3-14B|init_seed6: pred 22.1 obs 31.6 [22.6,41.0]",
+  "Qwen3-30B|anchor50: pred 2.3 obs 5.0 [2.6,7.3]"
+ ]
+}
+== bridge cross {
+ "control_only": {
+  "n": 20,
+  "inside": 16,
+  "r": 0.9232919288130592,
+  "mae": 3.8484719466490303,
+  "Qwen": {
+   "n": 15,
+   "inside": 14,
+   "mae": 1.117447457378013
+  },
+  "GLM": {
+   "n": 5,
+   "inside": 2,
+   "mae": 12.041545414462082
+  }
+ },
+ "plus_premium": {
+  "n": 20,
+  "inside": 11,
+  "r": 0.9562737056891033,
+  "mae": 4.209370866402118,
+  "Qwen": {
+   "n": 15,
+   "inside": 8,
+   "mae": 4.664070767195769
+  },
+  "GLM": {
+   "n": 5,
+   "inside": 3,
+   "mae": 2.845271164021165
+  }
+ }
+}

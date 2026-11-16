@@ -1,0 +1,7 @@
+{
+  "finished": 1794828705.1631317,
+  "coverage_complete": true,
+  "errors": [],
+  "extraction_code": 0,
+  "parquet": "/home/vllm/projects/local_disruptions_20261114/results/structural_v4/analysis/agent_rounds.parquet"
+}

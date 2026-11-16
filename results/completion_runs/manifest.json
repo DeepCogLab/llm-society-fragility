@@ -1,0 +1,162 @@
+{
+  "started": 1794823696.0552099,
+  "pid": 2608431,
+  "gpus": [
+    0,
+    1
+  ],
+  "authorization": "2026-11-16 user explicitly permits both GPUs at full load",
+  "sample": "24 fixed tasks x WS/ER x 24 agents x 9 rounds; no outcome-dependent stopping",
+  "note": "Original prompts, model precision, fingerprints and sampling seeds retained; GPU placement and batching change.",
+  "jobs": {
+    "Qwen2.5-7B-Instruct": [
+      [
+        "Qwen2.5-7B-Instruct_memory",
+        "society.structural_v4",
+        [
+          "--schedules",
+          "init_fullmem"
+        ]
+      ],
+      [
+        "Qwen2.5-7B-Instruct_nl_initial",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "initial_only",
+          "--arms",
+          "control,treated,treated_neutral,no_relay_treated"
+        ]
+      ],
+      [
+        "Qwen2.5-7B-Instruct_nl_persistent",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "persistent",
+          "--arms",
+          "control,treated,no_relay_treated"
+        ]
+      ]
+    ],
+    "Qwen3-30B-A3B-GPTQ-Int4": [
+      [
+        "Qwen3-30B-A3B-GPTQ-Int4_memory",
+        "society.structural_v4",
+        [
+          "--schedules",
+          "init_fullmem"
+        ]
+      ],
+      [
+        "Qwen3-30B-A3B-GPTQ-Int4_nl_initial",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "initial_only",
+          "--arms",
+          "control,treated,treated_neutral,no_relay_treated"
+        ]
+      ],
+      [
+        "Qwen3-30B-A3B-GPTQ-Int4_nl_persistent",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "persistent",
+          "--arms",
+          "control,treated,no_relay_treated"
+        ]
+      ]
+    ],
+    "Qwen3-14B": [
+      [
+        "Qwen3-14B_nl_initial",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "initial_only",
+          "--arms",
+          "control,treated,treated_neutral,no_relay_treated"
+        ]
+      ],
+      [
+        "Qwen3-14B_nl_persistent",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "persistent",
+          "--arms",
+          "control,treated,no_relay_treated"
+        ]
+      ]
+    ],
+    "GLM-4-9B-0414": [
+      [
+        "GLM-4-9B-0414_dose",
+        "society.structural_v4",
+        [
+          "--schedules",
+          "persist_seed6"
+        ]
+      ],
+      [
+        "GLM-4-9B-0414_nl_initial",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "initial_only",
+          "--arms",
+          "control,treated,treated_neutral,no_relay_treated"
+        ]
+      ],
+      [
+        "GLM-4-9B-0414_nl_persistent",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "persistent",
+          "--arms",
+          "control,treated,no_relay_treated"
+        ]
+      ]
+    ],
+    "Llama-3.1-8B-Instruct": [
+      [
+        "Llama-3.1-8B-Instruct_dose",
+        "society.structural_v4",
+        [
+          "--schedules",
+          "persist_seed6"
+        ]
+      ],
+      [
+        "Llama-3.1-8B-Instruct_nl_initial",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "initial_only",
+          "--arms",
+          "control,treated,treated_neutral,no_relay_treated"
+        ]
+      ],
+      [
+        "Llama-3.1-8B-Instruct_nl_persistent",
+        "society.semantic_v5",
+        [
+          "--schedules",
+          "persistent",
+          "--arms",
+          "control,treated,no_relay_treated"
+        ]
+      ]
+    ]
+  },
+  "source_sha256": {
+    "society/client.py": "94a7dce7f6abee572e0e818a8364c2574e888e54079f4f4dc80bb48ce6141499",
+    "society/structural_v4.py": "f880e5546200330bbdee3362c5f575c7106e42beb6efea4bdbd48e6e3bad617d",
+    "society/semantic_v5.py": "22dc83778191aa4f0082df719a7048725bfeceaffae0a441878ba90406a38da5",
+    "configs/structural_v4.json": "c94517e00be73e21b31e2ca54b0540789608d372efc4bd50ab3efe608e8d0b66",
+    "configs/models.json": "6058366507c8e3af05f0b4afeff6f465ca93e1e87d68844ac3617ead8d1d8979"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "models": [
+    {"id":"Qwen3-14B", "family":"Qwen", "url":"http://127.0.0.1:18240/v1", "disable_thinking":true, "fingerprint":"Qwen3-14B-bf16-vllm0.14.1-nonthinking-20261114"},
+    {"id":"Qwen2.5-7B-Instruct", "family":"Qwen", "url":"http://127.0.0.1:18241/v1", "fingerprint":"Qwen2.5-7B-Instruct-bf16-vllm0.14.1-20261114"},
+    {"id":"Qwen3-30B-A3B-GPTQ-Int4", "family":"Qwen", "url":"http://127.0.0.1:18242/v1", "disable_thinking":true, "fingerprint":"Qwen3-30B-A3B-gptq4-vllm0.14.1-nonthinking-20261114"},
+    {"id":"Llama-3.1-8B-Instruct", "family":"Llama", "url":"http://127.0.0.1:18243/v1", "fingerprint":"Llama-3.1-8B-Instruct-bf16-vllm0.14.1-20261114"},
+    {"id":"Mistral-7B-Instruct-v0.3", "family":"Mistral", "url":"http://127.0.0.1:18244/v1", "fingerprint":"Mistral-7B-Instruct-v0.3-bf16-vllm0.14.1-20261114"}
+  ]
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Local Disruptions to Collective Collapse</title>
+<meta name="description" content="Project page: a transient, local perturbation can leave a lasting collective error in LLM agent societies. The model sets the shock; the information structure sets its persistence.">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --bg:#fbfaf7; --fg:#1d2124; --muted:#5d666d; --line:#e3e0d8; --card:#ffffff;
+  --red:#c0392b; --blue:#1f618d; --grey:#6e7b7c; --accent:#c0392b; --chip:#f2efe8;
+  --maxw:980px;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#15181b; --fg:#e8e6e1; --muted:#a2a9ae; --line:#2c3236; --card:#1c2024;
+         --red:#e0695c; --blue:#6aa6d4; --grey:#9aa6a7; --accent:#e0695c; --chip:#22282c; }
+  .fig img{ background:#fff; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:17px/1.65 "Source Serif 4","Iowan Old Style","Palatino Linotype",Georgia,serif}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+header{padding:64px 0 28px;border-bottom:1px solid var(--line)}
+.venue{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(28px,4.6vw,46px);line-height:1.12;margin:12px 0 14px;font-weight:600;letter-spacing:-.01em}
+h1 span{display:block;color:var(--muted);font-weight:400;font-size:.62em;margin-top:8px}
+.authors{color:var(--muted);font-size:15px;margin:0 0 22px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;
+  border:1px solid var(--fg);color:var(--fg);text-decoration:none;font-size:14px;font-weight:500}
+.btn.primary{background:var(--fg);color:var(--bg)}
+.btn.off{opacity:.45;pointer-events:none;border-style:dashed}
+.btn svg{width:16px;height:16px}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px;font-weight:600}
+h3{font-size:22px;line-height:1.3;margin:0 0 10px;font-weight:600}
+p{margin:0 0 14px}
+.lede{font-size:clamp(20px,2.6vw,25px);line-height:1.45;margin:0}
+.lede b{color:var(--accent);font-weight:600}
+.fig{margin:22px 0 6px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px}
+.fig img{width:100%;height:auto;display:block}
+.cap{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.5}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.stat .n{font-size:34px;font-weight:600;line-height:1.1}
+.stat .l{font-size:14px;color:var(--muted);margin-top:6px;line-height:1.45}
+.n.red{color:var(--red)} .n.blue{color:var(--blue)} .n.grey{color:var(--grey)}
+.finding{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;margin-top:30px}
+.finding:first-of-type{margin-top:0}
+.finding.wide{grid-template-columns:1fr;gap:6px}
+.tag{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:var(--chip);color:var(--muted);margin-bottom:10px}
+.setup{display:grid;grid-template-columns:repeat(2,1fr);gap:12px 28px}
+.setup div{font-size:15.5px}
+.setup b{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+pre{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;overflow-x:auto;
+  font:13.5px/1.6 ui-monospace,SFMono-Regular,Consolas,Menlo,monospace;margin:0}
+code{font-family:ui-monospace,SFMono-Regular,Consolas,Menlo,monospace;font-size:.88em}
+footer{padding:30px 0 50px;color:var(--muted);font-size:14px}
+a{color:inherit}
+@media (max-width:760px){
+  header{padding-top:40px}
+  .stats{grid-template-columns:1fr}
+  .finding,.setup{grid-template-columns:1fr;gap:12px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="venue sans">Short paper · under double-blind review</div>
+    <h1>From Local Disruptions to Collective Collapse<span>Understanding the Fragility of LLM Agent Societies</span></h1>
+    <p class="authors sans">Anonymous Author(s)</p>
+    <div class="btns sans">
+      <a class="btn primary" id="code-link" href="#"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M5.7 4.3 2 8l3.7 3.7 1-1L4 8l2.7-2.7-1-1Zm4.6 0-1 1L12 8l-2.7 2.7 1 1L14 8l-3.7-3.7Z"/></svg>Code &amp; data</a>
+      <a class="btn" id="data-link" href="#"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1C4.7 1 2 2.1 2 3.5v9C2 13.9 4.7 15 8 15s6-1.1 6-2.5v-9C14 2.1 11.3 1 8 1Zm0 1.5c2.9 0 4.5.9 4.5 1s-1.6 1-4.5 1-4.5-.9-4.5-1 1.6-1 4.5-1ZM3.5 12.4V10c1.1.6 2.7.9 4.5.9s3.4-.3 4.5-.9v2.4c-.2.2-1.7 1.1-4.5 1.1s-4.3-.9-4.5-1.1Zm0-3.9V5.6C4.6 6.2 6.2 6.5 8 6.5s3.4-.3 4.5-.9v2.9c-.2.2-1.7 1.1-4.5 1.1s-4.3-.9-4.5-1.1Z"/></svg>Decision-level data</a>
+      <span class="btn off">Paper (after review)</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2 class="sans">In one sentence</h2>
+    <p class="lede">When three of 24 LLM agents spread a falsehood for two rounds and then fall silent, <b>the model and the message decide how large the shock is</b>, but <b>the information structure decides whether it stays</b>.</p>
+    <div class="stats sans">
+      <div class="stat"><div class="n red">46 pp</div><div class="l">excess error that remains 3–5 rounds after the false messages stop, when agents see their private signal only once</div></div>
+      <div class="stat"><div class="n blue">≤ 2.2 pp</div><div class="l">remains in every model when the signal stays accessible in every round</div></div>
+      <div class="stat"><div class="n grey">≤ 0.4 pp</div><div class="l">remains in every model and task when agents cannot relay what they heard from peers</div></div>
+    </div>
+    <div class="fig">
+      <img src="assets/fig1_overview.png" alt="Three-panel overview: a 24-node network with three seed agents and a nine-round timeline; one LLM agent with the two structural factors, signal access and peer relay; and excess error that either persists or decays after the perturbation." loading="lazy">
+      <div class="cap">(a) Three of 24 networked agents send a false message in rounds 2–3 and then stop. (b) Two structural factors are varied: <em>signal access</em> (the private signal is shown once or in every round; ρ is the share of agents with recurrent access) and <em>peer relay</em>. (c) The response is characterised by its <em>shock</em> and its <em>persistence</em>.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sans">Setup</h2>
+    <div class="setup">
+      <div><b class="sans">Task</b>The canonical social-learning game: a hidden binary state, a private signal correct with probability 0.7, neighbours' messages each round. An abstract and a natural-language version.</div>
+      <div><b class="sans">Society</b>24 agents on Watts–Strogatz or Erdős–Rényi graphs (degree 4), nine synchronous rounds, 24 tasks per topology and condition.</div>
+      <div><b class="sans">Transient perturbation</b>Three seed agents send a false message in rounds 2–3, then speak for themselves again. Outcomes are measured on the 21 other agents.</div>
+      <div><b class="sans">Models</b>Qwen2.5-7B, Qwen3-14B, Qwen3-30B-A3B, GLM-4-9B, Llama-3.1-8B (vLLM, temperature 0.7). 1,150,848 agent decisions in total.</div>
+      <div><b class="sans">Paired arms</b>Control, attacked, and attacked with relay blocked share the graph, the signals and the sampling seeds.</div>
+      <div><b class="sans">Measures</b>Excess error = attacked minus control (pp). Shock = round 3; persistence Δ = mean of rounds 6–8; 95% bootstrap CIs over tasks.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sans">Findings</h2>
+
+    <div class="finding wide">
+      <div style="max-width:760px">
+        <span class="tag sans">RQ1 · persistence</span>
+        <h3>A perturbation persists only when agents cannot re-access their signal</h3>
+        <p>With a one-time signal, Δ is 9–16 pp for the Qwen models and 46 pp for GLM-4-9B, 0.87–1.37 times the shock, so the error does not decay. Once a perturbation has overwritten some answers, nothing in the system still distinguishes the true state from the false one. Recurrent access supplies a restoring force and leaves at most 2.2 pp.</p>
+      </div>
+      <div class="fig" style="margin-top:0">
+        <img src="assets/fig2_trajectories.png" alt="Excess error by round for each model. Red one-time-signal lines rise in rounds 2-3 and stay high; blue recurrent lines return towards zero; grey relay-blocked lines return to zero at once." loading="lazy">
+        <div class="cap">Excess error by round. Red: one-time signal; blue: recurrent; grey dashed: relay blocked. Yellow: rounds with false messages.</div>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div>
+        <span class="tag sans">RQ2 · mechanism</span>
+        <h3>The error is sustained by peer relay, not by individual agents</h3>
+        <p>Blocking second-hand relay, while agents still receive the false messages, removes the long-run effect (Δ ≤ 0.3 pp). Agents left holding the error mostly never saw a false message and no longer cite it. With a one-time signal, agents of every model follow a local majority in 95–99% of decisions, and a simulation built only from rules fitted to unperturbed societies predicts Δ across 21 Qwen conditions (r = 0.97).</p>
+      </div>
+      <div class="fig" style="margin-top:0">
+        <img src="assets/fig3_local_rules.png" alt="Left: share of agents that change their answer as a function of wrong neighbours, close to a majority rule for every model with a one-time signal. Right: flip rates after a false versus an ordinary wrong message per model." loading="lazy">
+        <div class="cap">(a) Local decision rules in unperturbed societies. (b) Flip rate at first contact: false message (filled) vs. ordinary wrong message (open).</div>
+      </div>
+    </div>
+
+    <div class="finding">
+      <div>
+        <span class="tag sans">RQ3 · magnitude</span>
+        <h3>The model and the message set the shock, and protection has a cost</h3>
+        <p>The shock is 10–15 pp for the Qwen models and 33 pp for GLM-4-9B; a claimed authority in natural language converts 72–99% of correct agents it reaches. The structure fixes the share of a shock that is retained. Recurrent access protects against larger attacks, but ties the 30% of agents with a wrong signal to it: baseline error rises by 6–18 pp, and no ρ maximises both.</p>
+      </div>
+      <div class="fig" style="margin-top:0">
+        <img src="assets/fig4_shock_persistence.png" alt="Left: persistence against shock, red one-time points on the diagonal, blue and grey near zero. Right: as rho rises from 0 to 1, excess error falls and baseline error rises for the three Qwen models." loading="lazy">
+        <div class="cap">(a) Shock vs. persistence, one point per model and condition. (b) The resilience–learning trade-off as ρ rises from 0 to 1.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sans">Takeaway</h2>
+    <p class="lede" style="font-size:clamp(18px,2.2vw,22px)">Preserving access to first-hand evidence and limiting unsourced relaying may be more effective safeguards against lasting collective error than hardening individual agents. Robustness should be evaluated at the level of the society: the same model shows an excess error of 46 or 2 pp depending on its surroundings.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="sans">Reproduce</h2>
+    <p>Every number, figure and table in the paper is computed from the released decision-level data in about a minute:</p>
+<pre>pip install -r requirements.txt
+python paper/scripts/compute_numbers.py     # all numbers  -> paper/scripts/numbers.json
+python paper/scripts/make_figures_planA.py  # Figures 1-4
+python paper/scripts/make_tables_planA.py   # Tables 1-2</pre>
+    <p style="margin-top:14px">The simulation code (<code>experiment_code/</code>) re-runs the societies against vLLM servers with the original prompts and sampling seeds.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap sans">Anonymous submission. Code under MIT, data under CC BY 4.0.</div>
+</footer>
+
+<script>
+(function(){
+  // Works both on the anonymous mirror (/w/<id>/ -> /r/<id>/) and on the repository's own web page.
+  // No account name is written here, so the page stays anonymous on the mirror.
+  var code = "../", data = "../data/";
+  var m = location.pathname.match(/^\/w\/([^\/]+)/);
+  var gh = location.hostname.match(/^([^.]+)\.github\.io$/);
+  var repo = location.pathname.split("/")[1];
+  if (location.hostname.indexOf("4open.science") !== -1 && m) {
+    code = "https://anonymous.4open.science/r/" + m[1] + "/";
+    data = code + "data/";
+  } else if (gh && repo) {
+    code = "https://github.com/" + gh[1] + "/" + repo;
+    data = code + "/tree/main/data";
+  }
+  document.getElementById("code-link").href = code;
+  document.getElementById("data-link").href = data;
+})();
+</script>
+</body>
+</html>

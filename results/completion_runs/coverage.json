@@ -1,0 +1,502 @@
+[
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "persist_seed6",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen2.5-7B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated_neutral",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "structural_v4",
+    "schedule": "persist_seed6",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-30B-A3B-GPTQ-Int4",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated_neutral",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "structural_v4",
+    "schedule": "persist_seed6",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Qwen3-14B",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated_neutral",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "structural_v4",
+    "schedule": "persist_seed6",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "GLM-4-9B-0414",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated_neutral",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "init_fullmem",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "structural_v4",
+    "schedule": "persist_seed6",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "control",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "persistent",
+    "arm": "no_relay_treated",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  },
+  {
+    "model": "Llama-3.1-8B-Instruct",
+    "protocol": "semantic_v5",
+    "schedule": "initial_only",
+    "arm": "treated_neutral",
+    "complete": 48,
+    "required": 48,
+    "missing": [],
+    "invalid": []
+  }
+]

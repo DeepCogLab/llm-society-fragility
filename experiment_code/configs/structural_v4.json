@@ -1,0 +1,103 @@
+{
+  "design_id": "structural-determinants-v4-20261115",
+  "question": "Are persistence and recovery after a transient perturbation governed by where evidence is stored in the society (how many agents can re-access original evidence), consistently across model families with different individual social-response profiles?",
+  "profile": {
+    "start": 64000,
+    "reps": 12,
+    "note": "Individual characterization for families without a v3 profile. Same 246-cell grid as v3."
+  },
+  "network": {
+    "phase": "network_response_v3",
+    "start": 70000,
+    "reps": 24,
+    "topologies": [
+      "WS",
+      "ER"
+    ],
+    "n": 24,
+    "rounds": 9,
+    "onset": 2,
+    "duration": 2,
+    "fraction": 0.125,
+    "q": 0.7,
+    "note": "Identical Spec to v3, so graphs, tasks, private signals, seeds and sampling seeds are shared with v3 Qwen runs (common random numbers)."
+  },
+  "schedules": {
+    "persistent": {
+      "anchor_fraction": 1.0,
+      "arms": [
+        "control",
+        "treated",
+        "no_relay_treated"
+      ]
+    },
+    "initial_only": {
+      "anchor_fraction": 0.0,
+      "arms": [
+        "control",
+        "treated",
+        "no_relay_treated"
+      ]
+    },
+    "anchor25": {
+      "anchor_fraction": 0.25,
+      "arms": [
+        "control",
+        "treated"
+      ]
+    },
+    "anchor50": {
+      "anchor_fraction": 0.5,
+      "arms": [
+        "control",
+        "treated"
+      ]
+    },
+    "in_history": {
+      "anchor_fraction": 1.0,
+      "arms": [
+        "control",
+        "treated"
+      ],
+      "format": "past_tense_initial_observation"
+    },
+    "init_seed1": {
+      "anchor_fraction": 0.0,
+      "arms": [
+        "treated"
+      ],
+      "seed_fraction": 0.0417,
+      "paired_control": "initial_only"
+    },
+    "init_seed6": {
+      "anchor_fraction": 0.0,
+      "arms": [
+        "treated"
+      ],
+      "seed_fraction": 0.25,
+      "paired_control": "initial_only"
+    },
+    "persist_seed6": {
+      "anchor_fraction": 1.0,
+      "arms": [
+        "treated"
+      ],
+      "seed_fraction": 0.25,
+      "paired_control": "persistent"
+    },
+    "init_fullmem": {
+      "anchor_fraction": 0.0,
+      "arms": [
+        "control",
+        "treated"
+      ],
+      "memory": 9,
+      "note": "Memory ablation: initial_only evidence schedule, but each agent sees ALL its own past public decisions (incl. round 0) instead of only the last one."
+    }
+  },
+  "qwen_v3_reuse": "For the three Qwen models persistent and initial_only arms already exist in results/response_v3 with identical prompts/seeds; only anchor25, anchor50, in_history are run.",
+  "temperature": 0.7,
+  "stopping": "Fixed sample counts; no outcome-dependent stopping or condition replacement.",
+  "dose_amendment": "2026-11-15 16:40: added dose variants (1 and 6 seeds vs base 3) sharing base graph/task/exposure/sampling seeds; paired with the base schedule control. Added after v3 analysis showed perturbation memory; ABM dose predictions frozen before these runs.",
+  "memory_amendment": "2026-11-15 23:20: added init_fullmem (memory ablation) to test whether persistence requires the 1-step memory constraint. Same Spec/block_id/sampling seeds as initial_only; only the prompt's own-history window changes."
+}

@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "id": "Mistral-7B-Instruct-v0.3",
+      "family": "Mistral",
+      "url": "http://127.0.0.1:18244/v1",
+      "fingerprint": "Mistral-7B-Instruct-v0.3-bf16-tp1-fullGPU1-vllm0.14.1-20261114-fixed-json-whitespace-completion512-context4096-explicit-ebnf-confidence12digits-citations32-unrolled-equivalent",
+      "request_timeout_seconds": 1200,
+      "max_completion_tokens": 512,
+      "citation_max_length": 32,
+      "structured_grammar_path": "configs/decision_bounded.ebnf",
+      "structured_grammar_sha256": "2a1459fae01cd01a13fec03fbf0dcdf6797e66f287745a9b465f1cd3f951ee9b"
+    }
+  ],
+  "precision": "Unmodified BF16 weights, BF16 KV cache, no quantization",
+  "serving": {
+    "max_num_seqs": 128,
+    "client_concurrency": 96,
+    "simultaneous_societies": 4,
+    "max_num_batched_tokens": 8192,
+    "gpu_memory_utilization_per_device": 0.85,
+    "disable_any_whitespace": true,
+    "max_model_len": 4096,
+    "tensor_parallel_size": 1,
+    "cpu_offload_gb": 0,
+    "structured_backend": "xgrammar"
+  },
+  "schedule_amendment": "Run distinct pilot, micro sequence, and frozen confirmation namespaces concurrently to fill batches despite synchronous round barriers. Confirmation main uses 16 in-flight societies; micro and pilot each cap their API concurrency at 24. No duplicate phase runner is launched. Mistral pilot outcomes do not select its already-frozen confirmation settings.",
+  "operational_amendment": "Explicit user authorization received to rotate idle original services. Pause only idle Qwen14 onGPU1 after all Qwen studies completed. Mistral BF16 TP1 onfullGPU1, no CPU offload orloader hook; exact original command/environment restored in finally and independent watchdog handles controller death. Preserve alloffload512 records; full Mistral study restart withdistinctfingerprint. Sampling/prompt/schema/512/4096/fixedsample/seeds unchanged; batching andparallel kernels may alter outputs.",
+  "confirmation": "Fixed confirm_v2: 24 replicates per WS/ER; natural, provenance, no_relay and frozen, each with control and treatment",
+  "micro": "12 calibration, 24 confirmation, 24 source-ID-counterbalanced and paired A/B validation replicates",
+  "note": "Mistral selected before outcome data; resource relocation after explicit user permission, not outcome/significance selected. No Llama expansion is added.",
+  "format_amendment": "On 2026-11-14, observed repeated HTTP200 incomplete JSON containing arbitrarily long inter-field whitespace. XGrammar matched these failed prefixes only with any_whitespace=True. All pre-fix Mistral records and cache archived separately; every Mistral study rerun with fixed JSON separators under a distinct fingerprint. Prompts, choices, precision, samples and seeds unchanged. Fixed failed-request regression set must pass before study resumes. This model uses a different whitespace grammar than Qwen, a cross-family measurement limitation.",
+  "format_regression_archive": "results/archived/mistral_gpu_xgrammar_20261114",
+  "format_regression_result": "results/format_audit/mistral_unrolled_grammar512_regression.json",
+  "budget_amendment": {
+    "created": 1794613732.7729182,
+    "reason": "Two requests reproducibly stopped at exactly240 generated tokens (prompt612/888), with unfinished citations. Allow512 uniformly for every Mistral decision, not only failed cases. Public message260-character and JSON schema constraints unchanged. All prior Mistral calls/partial studies archived, all fixed studies rerun under a distinct fingerprint. max_model_len4096 provides prompt+completion headroom; no actual prompt is added or truncated. Qwen retains240/2048, disclose measurement asymmetry.",
+    "sample_size_unchanged": true,
+    "validation": "Before any new study, replay up to24 unique previous format failures plus12 key-sorted successful controls; accept only complete schema-valid raw responses, never select by choice or effect."
+  },
+  "resource_amendment": {
+    "created": 1794623249.2191043,
+    "all_prior_Mistral_archived": "results/archived/mistral_offload512_20261114",
+    "sample_size_unchanged": true,
+    "reason": "Remove CPU copy andTP2 transport bottleneck after explicit authorization; allpartial data preserved separately."
+  },
+  "job_prefix": "mistral_grammar_resume",
+  "explicit_grammar_amendment": {
+    "created": 1794626088.0670595,
+    "reason": "JSON-schema-to-grammar compiler permitted confidence1.58 and rawtab. Guidance rejectedthese offline but failednative compatibility andHF online tokenmask dummy-prefix handling, so notusedforstudy. RetainnativeMistraltokenizerandXGrammar engine, bypassschema compiler with explicitEBNF enforcingvalidescapedstrings,message260chars,choiceA/B,confidence0..1withmax12decimalplaces(no exponent),cites<=6strings<=32chars. InvalidIDsareallowedandscored. Preserveallolddata,allMistralstudiesrestartwithdistinctfingerprint. No clipping/replacement/defaults or outcome-basedselection. Fixedsamples/prompts/seeds/BF16/512/4096unchanged. Formattingasymmetrymustbedisclosed."
+  },
+  "grammar_performance_amendment": {
+    "created": 1794626403.7475092,
+    "reason": "Quantified json-char{0,260} grammar gave0.1..0.32s per mask and1.5aggregate tokens/s duringdiagnosticreplay. Equivalentright-recursiveboundedchainsgave~.016s per mask atbothprefixes. Sameallowedlanguage/bounds/fieldorder; no studyhadstarted. Preserve oldprobe/cache/logs; repeatonlinefixedregressionbeforestudy."
+  },
+  "transport_timeout_amendment": {
+    "created": 1794627642.8381171,
+    "reason": "Recentfailedrequestselapsed240.005..240.032secondswithHTTPstatusnull andemptyReadTimeouterror. Extendedreadwaitto1200seconds forallMistralrequests; outputcap512,grammarSHA256,fingerprint,prompts,seeds,samplesandservercommand unchanged. Preserveandreuseallvalidcurrentcachedresponses; keepfailedattempts andreceive genuineanswers forunrecoveredkeys. No semantic/default repair ornewstudydatareset."
+  }
+}
