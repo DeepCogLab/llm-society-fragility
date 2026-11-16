@@ -1,7 +1,7 @@
 # From Local Disruptions to Collective Collapse: Understanding the Fragility of LLM Agent Societies
 
 Code, data and results for the paper (under double-blind review).
-Project page: see `docs/index.html` (served as the repository's web page).
+Project page: <https://anonymous.4open.science/w/llm-society-fragility/> (source in `docs/`).
 
 **Summary.** Networked LLM agents repeatedly infer a hidden binary state from a private signal and their
 neighbours' messages (the canonical social-learning game). Three of 24 agents send a false message for two
