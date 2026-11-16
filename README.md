@@ -6,7 +6,7 @@
 
 *Anonymous Author(s) · Short paper under double-blind review*
 
-[![Project page](https://img.shields.io/badge/Project-Page-c0392b?style=flat-square)](https://anonymous.4open.science/w/llm-society-fragility/)
+[![Project page](https://img.shields.io/badge/Project-Page-c0392b?style=flat-square)](https://anonymous.4open.science/w/llm-society-fragility-8355/)
 [![Data](https://img.shields.io/badge/Data-1.15M_decisions-1f618d?style=flat-square)](data/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776ab?style=flat-square&logo=python&logoColor=white)](requirements.txt)
 [![vLLM](https://img.shields.io/badge/Inference-vLLM_0.14-6e7b7c?style=flat-square)](experiment_code/)
